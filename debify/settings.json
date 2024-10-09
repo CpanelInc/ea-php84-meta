@@ -1,0 +1,22 @@
+{
+    "remove_from_requires": [
+        "scl-utils-build",
+        "scl-utils"
+    ],
+    "do_not_build_packages": [
+        "ea-php84-build",
+        "ea-php84-scldevel"
+    ],
+    "dont_relativise_ontar": 1,
+    "disclude_sources" : [ "README.md" ],
+    "remove_from_install" : [ "(?:^|/)README$", "(?:^|/)enable$", "(?:^|/)ea-php84.7.gz" ],
+    "dont_override_config" : 1,
+    "no_files_pkgs": {
+        "ea-php84": "has no files, only brings in other packages i.e. a meta package"
+    },
+    "fix_dh_usrlocal": 1,
+    "override_vars": {
+        "full_package_name": "ea-php84-8.4.0RC1",
+        "previous_version": "8.4.0"
+    }
+}
