@@ -11,7 +11,7 @@
 
 Summary:       Package that installs PHP 8.4
 Name:          %scl_name
-Version:       8.4.10
+Version:       8.4.11
 Vendor:        cPanel, Inc.
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4590 for more details
 %define        release_prefix 1
@@ -178,6 +178,9 @@ mkdir -p %{buildroot}/opt/cpanel/%{scl}/root/usr/share/locale
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
+* Fri Aug 01 2025 Cory McIntire <cory.mcintire@webpros.com> - 8.4.11-1
+- EA-13049: Update ea-php84 from v8.4.10 to v8.4.11
+
 * Thu Jul 03 2025 Cory McIntire <cory.mcintire@webpros.com> - 8.4.10-1
 - EA-12995: Update ea-php84 from v8.4.8 to v8.4.10
 
